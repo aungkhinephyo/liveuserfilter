@@ -1,0 +1,91 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background: #f8f9fd;
+  font-family: 'Roboto', sans-serif;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  overflow: hidden;
+  margin: 0;
+}
+
+.container{
+  width: 250px;
+  background-color: white;
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
+}
+
+.header{
+  color: white;
+  background-color: rgb(52, 52, 168);
+  margin: 0;
+  padding: 10px 30px 10px;
+  text-align: center;
+}
+
+.header h3{
+  margin: 10px 0 10px;
+}
+
+.header small{
+  display: block;
+  margin: 0 0 10px;
+}
+
+.header input{
+  width: 100%;
+  font-family: 'Roboto', sans-serif;
+  color:white;
+  background-color: rgb(31, 31, 88);
+  padding: 2px 5px 2px;
+  border:none;
+  border-radius: 50px;
+  outline: none;
+}
+
+.user-list{
+  list-style-type: none;
+  background-color: white;
+  margin:0;
+  padding:0;
+  max-height: 400px;
+  font-size: 12px;
+  overflow: auto;
+}
+
+.user-list li{
+  display: flex;
+  padding: 15px;
+}
+
+.user-list img{
+  border-radius: 50%;
+  object-fit: cover;
+  width: 50px;
+  height: 50px;
+}
+
+.user-list .user-info{
+  margin-left: 10px;
+}
+.user-list .user-info h4{
+  margin: 6px 0 5px;
+}
+.user-list .user-info p{
+  font-size: 12px;
+}
+
+.user-list li:not(:last-of-type){
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+ /* need precise specificity to override */
+.user-list li.hide{
+  display:none;
+}
